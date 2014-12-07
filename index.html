@@ -45,56 +45,11 @@
 			<button id= "getSomethingCute" class="btn btn-lg btn-success"> <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> </button>
 		</div>
 		<script type = "text/javascript"> 
-			var images = ["http://imgs.abduzeedo.com/files/articles/baby-animals/Baby-Animals-011.jpg",
-						"http://cute-baby-animals.com/wp-content/uploads/2014/06/Baby-Animals-53.jpg",
-						"http://www.popfixx.com/wp-content/uploads/2013/08/img1114.jpg",
-						"https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQsAZzo5ALaffYKpVISh3a5BDw0RGOlm0XoC49DLURfSneEcT09",
-						"http://up3.typepad.com/6a010535647bf3970b0120a5c98295970b-220si", 
-						"https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVcB1ij5xpLju-GAgss4owVRMYF7Zv9-Gt7ZlcZhk9FaKO4gnh",
-						"https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSyEON5aWw9BzJZDg7oMAAY2LwfJMl0KP-vdyKE950ODxL5zawJ",
-						"http://www.stylemotivation.com/wp-content/uploads/2013/07/cute-baby-animals-4.jpg",
-						"https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTf6tsD7BxZIxeU1B-TN_nhJtr423Tvct3QK-VuKmV0VHPKsYbR", 
-						"https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSSX1rps9a01OOvqrnFivyh0_bbi1rCGF-tgaPyQdlfAA-JDapI",
-						"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdnEPiNXg15PQVvdh20qcYqghap--sIb3UXmwPBD2Hd4ShaOe1_Q",
-						"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN_ilhU8_h3aRcl9xB6gIkRcwzEVx8NjptxpfLQ1VsFO6CXw0J",
-						"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtSzO1j7jU1HS_hGPREDf9FaUKmJwm8MaUQ-oUVmkubnbIt914",
-						"https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTuydb7hnqATLg73m0Ha9bp3bOxS0TiMbRrByS0hXgx5BFx3HT-",
-						"https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRnP2Am4XIHek9Kk-bmhv5VsYBS-XDUYKaEeR5RgAHfOetfZ31paQ",
-						"https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQuB4N9dyWfYJOYAdKFoA0oSrCDJRuUhV56TOVX5NqggAiKQPYqsA",
-						"http://www.photofunblog.com/wp-content/uploads/2011/02/Adorable-Baby-Animals-14.jpg",
-						"http://www.weruletheinternet.com/wp-content/uploads/images/2012/march/baby_animals/cute_baby_animals_15.jpg",
-						"http://www.weruletheinternet.com/wp-content/uploads/images/2012/march/baby_animals/cute_baby_animals_11.jpg",
-						"http://www.weruletheinternet.com/wp-content/uploads/images/2012/march/baby_animals/cute_baby_animals_5.jpg",
-						"http://www.weruletheinternet.com/wp-content/uploads/images/2012/march/baby_animals/cute_baby_animals_2.jpg",
-						"http://www.weruletheinternet.com/wp-content/uploads/images/2012/march/baby_animals/cute_baby_animals_4.jpg",
-						"http://www.weruletheinternet.com/wp-content/uploads/images/2012/march/baby_animals/cute_baby_animals_20.jpg",
-						"http://maxcdn.thedesigninspiration.com/wp-content/uploads/2009/09/cute-animals/04.jpg",
-						"http://maxcdn.thedesigninspiration.com/wp-content/uploads/2009/09/cute-animals/baby06.jpg",
-						"http://maxcdn.thedesigninspiration.com/wp-content/uploads/2009/09/cute-animals/07.jpg", 
-						"http://maxcdn.thedesigninspiration.com/wp-content/uploads/2009/09/cute-animals/08.jpg",
-						"http://maxcdn.thedesigninspiration.com/wp-content/uploads/2009/09/cute-animals/09.jpg",
-						"http://maxcdn.thedesigninspiration.com/wp-content/uploads/2009/09/cute-animals/10.jpg",
-						"http://maxcdn.thedesigninspiration.com/wp-content/uploads/2009/09/cute-animals/14.jpg",
-						"http://maxcdn.thedesigninspiration.com/wp-content/uploads/2009/09/cute-animals/28.jpg",
-						"http://maxcdn.thedesigninspiration.com/wp-content/uploads/2009/09/cute-animals/33.jpg", 
-						"http://maxcdn.thedesigninspiration.com/wp-content/uploads/2009/09/cute-animals/37.jpg",
-						"http://maxcdn.thedesigninspiration.com/wp-content/uploads/2009/09/cute-animals/38.jpg", 
-						"http://maxcdn.thedesigninspiration.com/wp-content/uploads/2009/09/cute-animals/41.jpg",
-						"http://maxcdn.thedesigninspiration.com/wp-content/uploads/2009/09/cute-animals/42.jpg",
-						"http://maxcdn.thedesigninspiration.com/wp-content/uploads/2009/09/cute-animals/45.jpg",
-						"http://maxcdn.thedesigninspiration.com/wp-content/uploads/2009/09/cute-animals/baby47.jpg",
-						"http://maxcdn.thedesigninspiration.com/wp-content/uploads/2009/09/cute-animals/49.jpg",
-						"http://maxcdn.thedesigninspiration.com/wp-content/uploads/2009/09/cute-animals/53.jpg",
-						"http://maxcdn.thedesigninspiration.com/wp-content/uploads/2009/09/cute-animals/56.jpg",
-						"http://maxcdn.thedesigninspiration.com/wp-content/uploads/2009/09/cute-animals/61.jpg",
-						"http://maxcdn.thedesigninspiration.com/wp-content/uploads/2009/09/cute-animals/65.jpg",
-						"http://maxcdn.thedesigninspiration.com/wp-content/uploads/2009/09/cute-animals/70.jpg",
-						"http://www.demilked.com/magazine/wp-content/uploads/2014/04/beautiful-foxes-wildlife-photography-9.jpg",
-						"http://www.demilked.com/magazine/wp-content/uploads/2014/04/beautiful-foxes-wildlife-photography-18.jpg"];
+			var images = ["cute_baby_animals_20.jpg"];
 				
 			var ChangeImage = function(){
 				var PictureIndex = Math.floor((Math.random() * images.length));
-				$("#SomethingCute").attr("src", images[PictureIndex]);
+				$("#SomethingCute").attr("src", "./images/" + images[PictureIndex]);
 			};
 			
 			
